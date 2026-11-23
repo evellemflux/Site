@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+<body>
+    
+<main class="container">
+    <section class="login-card">
+
+       
+        <div class="image-section">
+            <img src="Mulhertreinando.png" alt="Pessoa treinando">
+        </div>
+
+        
+        <div class="form-section">
+
+            
+            <div class="tabs">
+                <button class="tab active" id="loginTab">
+                    Login
+                </button>
+
+                <button class="tab" id="cadastroTab">
+                    Cadastro
+                </button>
+            </div>
+
+         
+            <form id="loginForm">
+
+                <h2>Bem-vindos de volta!</h2>
+
+                <p class="subtitle">
+                    Acesse sua conta para continuar
+                </p>
+
+                
+                <div class="input-group">
+                    <label for="email">E-mail</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-envelope"></i>
+                        <input type="email" id="email" placeholder="Digite seu email" required>
+                    </div>
+                </div>
+
+                
+                <div class="input-group">
+                    <label for="senha">Senha</label>
+
+                    <div class="input-box">
+                        <i class="fa-solid fa-lock"></i>
+                        <input type="password" id="senha" placeholder="Digite sua senha" required>
+                        <i class="fa-regular fa-eye toggle-password" id="togglePassword"></i>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn-primary">
+                    Entrar
+                </button>
+
+               
+                <div class="divider">
+                    <span></span>
+                    <small>OU</small>
+                    <span></span>
+                </div>
+
+               
+                <button type="button" class="google-button">
+                    <i class="fa-brands fa-google"></i>
+                    Entre com o Google
+                </button>
+
+              
+                <a href="#" class="forgot-password">
+                    Esqueceu sua senha?
+                </a>
+
+            </form>
+
+        </div>
+
+    </section>
+</main>
+
+<script src="formulario.js"></script>
+</body>
+</html>

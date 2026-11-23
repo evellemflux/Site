@@ -1,0 +1,285 @@
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.cadastro-card {
+    width: 100%;
+    max-width: 920px;
+    height: 750px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border: 1px solid #DADADA;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.Homemtreinando {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.Homemtreinando img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: right;
+    display: block;
+}
+
+.form-section {
+    width: 100%;
+    min-width: 0;
+    padding: 30px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.tab {
+    width: 50%;
+    height: 40px;
+    border: 1px solid #D1D5D1;
+    background-color: #F8FAF8;
+    color: black;
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tab:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.tab:last-child {
+    color: black;
+    border: 1px solid #22C55E;
+    border-radius: 0 20px 20px 0;
+    font-weight: 600;
+    background-color: #22C55E;
+}
+
+h2 {
+    font-size: 21px;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+.input-group {
+    margin-bottom: 9px;
+}
+
+.input-group label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #050505;
+    margin-bottom: 5px;
+}
+
+.input-box {
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    border: 1px solid #E1E5E1;
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 100%;
+    height: 38px;
+}
+
+.input-box:focus-within {
+    border-color: #22C55E;
+}
+
+.input-box i {
+    color: #707070;
+    font-size: 13px;
+}
+
+.input-box input {
+    width: 100%;
+    min-width: 0;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    font-size: 11px;
+    color: #050505;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+
+.btn-primary {
+    width: 100%;
+    height: 40px;
+    margin-top: 5px;
+    background-color: #22C55E;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #0F8A45;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 12px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #DDDDDD;
+}
+
+.divider small {
+    color: #999999;
+    font-size: 11px;
+}
+
+.google-button {
+    width: 100%;
+    height: 38px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    font-size: 12px;
+    cursor: pointer;
+    border: 1px solid #D1D5D1;
+}
+
+.google-button i {
+    color: #0F8A45;
+    margin-right: 8px;
+}
+
+.forgot-password {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 12px;
+    font-size: 11px;
+    color: #0F8A45;
+    text-decoration: none;
+}
+
+@media (min-width: 541px) and (max-width: 900px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .cadastro-card {
+        max-width: 540px;
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+
+    .Homemtreinando {
+        height: 260px;
+    }
+
+    .form-section {
+        padding: 28px;
+    }
+}
+
+@media (max-width: 540px) {
+
+    .container {
+        padding: 12px;
+        align-items: flex-start;
+    }
+
+    .cadastro-card {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        grid-template-columns: 1fr;
+        border-radius: 12px;
+    }
+
+    .Homemtreinando {
+        height: 200px;
+    }
+
+    .form-section {
+        padding: 22px 18px;
+        overflow: visible;
+    }
+
+    .tabs {
+        margin-bottom: 20px;
+    }
+
+    .tab {
+        height: 38px;
+        font-size: 12px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+
+    .input-group {
+        margin-bottom: 12px;
+    }
+
+    .input-box {
+        height: 42px;
+    }
+
+    .btn-primary {
+        height: 42px;
+    }
+
+    .google-button {
+        height: 40px;
+    }
+}
+

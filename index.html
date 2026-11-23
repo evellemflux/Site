@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GymFlow</title>
+</head>
+<body>
+    <header class="container">
+        <div class="navbar">
+
+            <div class="logo">
+                Gym<span>Flow</span>
+            </div>
+
+            <div class="nav-links">
+                <ul>
+                    <li>Início</li>
+                    <li>Planos</li>
+                    <li>Dasboard</li>
+                    <li>Sobre Nós</li>
+                    <li>Contatos</li>
+
+                    <div class="button">
+                        <button class="btn" onclick="irPara('login.html')">Entrar</button>
+                        <button class="btn-global" onclick="irPara('cadastro.html')">Cadastro</button>
+                    </div>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+   
+
+
+<section class="area-carrossel">
+
+    <div class="carrossel">
+
+        <div class="janela-carrossel">
+
+            <div class="faixa-carrossel">
+
+                <!-- BANNER 1 -->
+                <article class="slide-carrossel" id="banner1">
+
+                    <img src="Banner 1.jpg" alt="Banner 1">
+
+                    <a href="#banner4" class="seta esquerda">&lt;</a>
+                    <a href="#banner2" class="seta direita">&gt;</a>
+
+                </article>
+
+                <!-- BANNER 2 -->
+                <article class="slide-carrossel" id="banner2">
+
+                    <img src="Banner 2.jpg" alt="Banner 2">
+
+                    <a href="#banner1" class="seta esquerda">&lt;</a>
+                    <a href="#banner3" class="seta direita">&gt;</a>
+
+                </article>
+
+                <!-- BANNER 3 -->
+                <article class="slide-carrossel" id="banner3">
+
+                    <img src="Banner 3.jpg" alt="Banner 3">
+
+                    <a href="#banner2" class="seta esquerda">&lt;</a>
+                    <a href="#banner4" class="seta direita">&gt;</a>
+
+                </article>
+
+                <!-- BANNER 4 -->
+                <article class="slide-carrossel" id="banner4">
+
+                    <img src="Banner 4.jpg" alt="Banner 4">
+
+                    <a href="#banner3" class="seta esquerda">&lt;</a>
+                    <a href="#banner1" class="seta direita">&gt;</a>
+
+                </article>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+
+
+
+
+<main class="area-principal">
+
+    <section class="card-jornada">
+
+        <div class="cabecalho-card">
+            <h2>SUA JORNADA</h2>
+        </div>
+
+        <div class="conteudo-jornada">
+
+            <div class="linha-progresso">
+                <span class="etapa"></span>
+                <span class="etapa"></span>
+                <span class="etapa"></span>
+                <span class="etapa"></span>
+                <span class="etapa"></span>
+            </div>
+
+            <button class="botao-iniciar">INICIAR</button>
+
+        </div>
+
+    </section>
+
+
+    <div class="grade-cards">
+
+       
+        <section class="card-estatisticas">
+
+            <div class="cabecalho-card">
+                <h2>ESTATÍSTICAS</h2>
+            </div>
+
+            <div class="conteudo-estatisticas">
+
+                <div class="informacao-estatistica">
+                    <span>Treinos Concluídos</span>
+                    <strong>00 Total</strong>
+                </div>
+
+                <div class="informacao-estatistica">
+                    <span>Frequência</span>
+                    <strong>00%</strong>
+                </div>
+
+                <div class="informacao-estatistica">
+                    <span>Tempo</span>
+                    <strong>0:00h</strong>
+                </div>
+
+                <div class="informacao-estatistica">
+                    <span>Peso</span>
+                    <strong>0Kg</strong>
+                </div>
+
+            </div>
+
+        </section>
+
+
+       
+        <section class="card-conquistas">
+
+            <div class="cabecalho-card">
+                <h2>CONQUISTAS</h2>
+            </div>
+
+            <div class="conteudo-conquistas">
+
+                <span class="conquista"></span>
+                <span class="conquista"></span>
+                <span class="conquista"></span>
+                <span class="conquista"></span>
+                <span class="conquista"></span>
+                <span class="conquista"></span>
+
+            </div>
+
+        </section>
+
+
+        
+        <section class="card-treino">
+
+            <div class="cabecalho-card">
+                <h2>TREINO DE HOJE</h2>
+                <span class="etiqueta-recente">RECENTE</span>
+            </div>
+
+            <div class="conteudo-treino">
+
+                <span class="icone-treino"></span>
+
+                <h3>TREINO DE INFERIORES</h3>
+
+                <p>TEMP: 45MIN / 6 Exercícios</p>
+
+                <button class="botao-treino">VER TREINO</button>
+
+            </div>
+
+        </section>
+
+
+        
+        <section class="card-objetivos">
+
+            <div class="cabecalho-card">
+                <h2>OBJETIVOS</h2>
+            </div>
+
+            <div class="conteudo-objetivos">
+
+            </div>
+
+        </section>
+
+    </div>
+
+</main>
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

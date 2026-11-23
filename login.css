@@ -1,0 +1,286 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+}
+
+.login-card {
+    width: 920px;
+    min-height: 560px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: white;
+    border: 1px solid #DADADA;
+    overflow: hidden;
+}
+
+.image-section {
+    width: 100%;
+    min-height: 560px;
+    overflow: hidden;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.form-section {
+    padding: 40px 44px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 38px;
+}
+
+.tab {
+    width: 50%;
+    height: 40px;
+    border: 1px solid #D1D5D1;
+    background-color: #F8FAF8;
+    color: #111111;
+    font-family: 'Inter';
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.tab:first-child {
+    border-radius: 20px 0 0 20px;
+}
+
+.tab:last-child {
+    border-radius: 0 20px 20px 0;
+}
+
+.tab.active {
+    background-color: #39D358;
+    border-color: #39D358;
+    color: black;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #050505;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #555555;
+
+    margin-bottom: 32px;
+}
+
+.input-group {
+    margin-bottom: 24px;
+}
+
+.input-group label {
+    display: block;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #050505;
+
+    margin-bottom: 8px;
+}
+
+.input-box {
+    width: 100%;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 12px;
+
+    border: 1px solid #E1E5E1;
+    border-radius: 8px;
+
+    background-color: #FFFFFF;
+
+    transition: border 0.2s;
+}
+
+.input-box:focus-within {
+    border-color: #39D358;
+}
+
+.input-box i {
+    color: #707070;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    outline: none;
+
+    padding-left: 12px;
+
+    font-family: inherit;
+    font-size: 12px;
+
+    color: #050505;
+}
+
+.input-box input::placeholder {
+    color: #A5A5A5;
+}
+
+.toggle-password {
+    cursor: pointer;
+}
+
+
+.btn-primary {
+    width: 100%;
+    height: 44px;
+
+    margin-top: 8px;
+
+    background-color: #39D358;
+    color: #FFFFFF;
+
+    border: none;
+    border-radius: 9px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0F8A45;
+}
+
+
+.divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    margin: 18px 0;
+}
+
+.divider span {
+    flex: 1;
+    height: 1px;
+    background-color: #DDDDDD;
+}
+
+.divider small {
+    color: #999999;
+    font-size: 11px;
+}
+
+
+.google-button {
+    width: 100%;
+    height: 42px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    border-radius: 20px;
+
+    font-family: inherit;
+    font-size: 12px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.google-button i {
+    color: #0F8A45;
+    margin-right: 8px;
+}
+
+.forgot-password {
+    display: block;
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin-top: 18px;
+    font-size: 11px;
+    color: #0F8A45;
+    text-decoration: none;
+}
+
+.register-footer {
+    text-align: center;
+    margin-top: 18px;
+    font-size: 11px;
+}
+
+.register-footer a {
+    color: #0F8A45;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/* ESCONDER FORMULÁRIO */
+.hidden {
+    display: none;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .login-card {
+        width: 100%;
+        max-width: 460px;
+
+        grid-template-columns: 1fr;
+    }
+
+    .image-section {
+        min-height: 220px;
+        height: 220px;
+    }
+
+    .form-section {
+        padding: 30px 24px;
+    }
+
+    .tabs {
+        margin-bottom: 28px;
+    }
+
+}
