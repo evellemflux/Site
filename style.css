@@ -113,43 +113,58 @@ body {
     color: var(--primary-green);
 }
 
+.navbar-brand {
+    font-weight: 700;
+    color: #222222;
+}
+
+.navbar-brand span {
+    color: var(--primary-green);
+}
+
 .auth-buttons {
   display: flex;
   gap: 12px;
 }
 
-.btn {
-  padding: 8px 24px;
-  border-radius: 25px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease;
+.nav-buttons {
+    display: flex;
+    align-items: center;
+    gap: 12px;
 }
 
+.btn {
+    padding: 8px 24px;
+    border-radius: 25px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    text-decoration: none;
+}
+
+
 .btn-login {
-  background: #ffffff;
-  color: var(--text-dark);
-  border: 1px solid #e0e0e0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    background: #ffffff;
+    color: var(--text-dark);
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
 }
 
 .btn-login:hover {
-  background: #f7f7f7;
+    background: #f7f7f7;
 }
 
 .btn-signup {
-  background: var(--primary-green);
-  color: #111111;
-  border: 1px solid var(--primary-green);
+    background: var(--primary-green);
+    color: #111111;
+    border: 1px solid var(--primary-green);
 }
 
 .btn-signup:hover {
-  background: var(--dark-green);
-  color: #ffffff;
+    background: var(--dark-green);
+    color: #ffffff;
 }
-
-
 
 .banner-section {
   margin-bottom: 24px;
@@ -177,7 +192,7 @@ body {
     height: 450px;
     display: block;
     object-fit: cover;
-    object-position: center 10%;
+    object-position: center 32%;
 }
 
 .carousel-btn {
@@ -253,21 +268,32 @@ body {
 }
 
 .card {
+  border: 1px solid #000000;
   border-radius: 16px;
   padding: 22px 24px;
 }
 
 .card-white {
-  background-color: #ffffff;
-  border: 1px solid var(--border-card);
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+    overflow: hidden;
 }
 
 .card-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin: -22px -24px 18px;
+    padding: 0 24px;
+    height: 90px;
+
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #cccccc;
+
+    border-radius: 16px 16px 0 0;
+    box-sizing: border-box;
 }
 
 .card h3 {
@@ -286,7 +312,6 @@ body {
 .link-green:hover {
   text-decoration: underline;
 }
-
 
 .card-green {
   background-color: var(--primary-green);
@@ -383,7 +408,7 @@ body {
   width: 56px;
   height: 56px;
   border-radius: 50%;
-  background-color: var(--bg-stat);
+  background-color: black;
   transition: transform 0.2s, background-color 0.2s;
 }
 
@@ -487,6 +512,33 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
 }
 
+.objective-body {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.objective-info {
+    flex: 1;
+}
+
+.workout-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.objective-card,
+.today-workout-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.objective-body,
+.workout-banner {
+    margin-top: auto;
+    margin-bottom: auto;
+}
 
 @media (max-width: 960px) {
   .top-grid {
@@ -520,3 +572,13 @@ body {
   }
 }
 
+@media (max-width: 991px) {
+    .nav-buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        margin-top: 15px;
+        width: 100%;
+    }
+}
