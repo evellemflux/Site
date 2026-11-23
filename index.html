@@ -1,88 +1,115 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>GymFlow</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GymFlow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-    <header class="container">
-        <div class="navbar">
+  <div class="container">
+    
+    <header class="navbar">
+      <a href="#" class="logo">Gym<span>Flow</span></a>
+            <nav class="nav-links" id="navLinks">
 
-            <div class="logo">
-                Gym<span>Flow</span>
-            </div>
+                <a href="#" class="active">Início</a>
 
-            <div class="nav-links">
-                <ul>
-                    <li>Início</li>
-                    <li>Planos</li>
-                    <li>Dasboard</li>
-                    <li>Sobre Nós</li>
-                    <li>Contatos</li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdownMenuLink"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        Dashboard
+                    </a>
 
-                    <div class="button">
-                        <button class="btn" onclick="irPara('login.html')">Entrar</button>
-                        <button class="btn-global" onclick="irPara('cadastro.html')">Cadastro</button>
-                    </div>
-                </ul>
-            </div>
-        </div>
+                    <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item" href="#">Aluno</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">Personal</a>
+                        </li>
+                    </ul>
+                </li>
+
+                <a href="#">Progresso</a>
+                <a href="#">Contato</a>
+                <a href="#">Sobre Nós</a>
+
+            </nav>
+      
+     
+
+      <div class="tabs">
+            <button type="button" class="tab-btn active" id="loginTab">
+                Login
+            </button>
+
+            <button type="button" class="tab-btn" id="cadastroTab">
+                Cadastro
+            </button>
+      </div>
+
+
     </header>
 
-   
+    <section class="banner-section" aria-label="Destaques">
 
+    <div class="carousel">
 
-<section class="area-carrossel">
+        <div class="carousel-track" id="carouselTrack">
 
-    <div class="carrossel">
-
-        <div class="janela-carrossel">
-
-            <div class="faixa-carrossel">
-
-                <!-- BANNER 1 -->
-                <article class="slide-carrossel" id="banner1">
-
-                    <img src="Banner 1.jpg" alt="Banner 1">
-
-                    <a href="#banner4" class="seta esquerda">&lt;</a>
-                    <a href="#banner2" class="seta direita">&gt;</a>
-
-                </article>
-
-                <!-- BANNER 2 -->
-                <article class="slide-carrossel" id="banner2">
-
-                    <img src="Banner 2.jpg" alt="Banner 2">
-
-                    <a href="#banner1" class="seta esquerda">&lt;</a>
-                    <a href="#banner3" class="seta direita">&gt;</a>
-
-                </article>
-
-                <!-- BANNER 3 -->
-                <article class="slide-carrossel" id="banner3">
-
-                    <img src="Banner 3.jpg" alt="Banner 3">
-
-                    <a href="#banner2" class="seta esquerda">&lt;</a>
-                    <a href="#banner4" class="seta direita">&gt;</a>
-
-                </article>
-
-                <!-- BANNER 4 -->
-                <article class="slide-carrossel" id="banner4">
-
-                    <img src="Banner 4.jpg" alt="Banner 4">
-
-                    <a href="#banner3" class="seta esquerda">&lt;</a>
-                    <a href="#banner1" class="seta direita">&gt;</a>
-
-                </article>
-
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1400&q=80"
+                    alt="Treino com corda naval na academia">
             </div>
+
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1400&q=80"
+                    alt="Equipamentos de musculação">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1400&q=80"
+                    alt="Treino funcional">
+            </div>
+
+            <div class="carousel-slide">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=1400&q=80"
+                    alt="Treino de musculação">
+            </div>
+
+        </div>
+
+        
+        <button class="carousel-btn prev" id="prevBtn" aria-label="Slide anterior">
+            &#10094;
+        </button>
+
+       
+        <button class="carousel-btn next" id="nextBtn" aria-label="Próximo slide">
+            &#10095;
+        </button>
+
+        
+        <div class="carousel-dots" id="carouselDots">
+
+            <button class="dot active" data-index="0" aria-label="Ir para slide 1"></button>
+
+            <button class="dot" data-index="1" aria-label="Ir para slide 2"></button>
+
+            <button class="dot" data-index="2" aria-label="Ir para slide 3"></button>
+
+            <button class="dot" data-index="3" aria-label="Ir para slide 4"></button>
 
         </div>
 
@@ -90,143 +117,106 @@
 
 </section>
 
-
-
-
-
-
-
-
-
-<main class="area-principal">
-
-    <section class="card-jornada">
-
-        <div class="cabecalho-card">
-            <h2>SUA JORNADA</h2>
-        </div>
-
-        <div class="conteudo-jornada">
-
-            <div class="linha-progresso">
-                <span class="etapa"></span>
-                <span class="etapa"></span>
-                <span class="etapa"></span>
-                <span class="etapa"></span>
-                <span class="etapa"></span>
-            </div>
-
-            <button class="botao-iniciar">INICIAR</button>
-
-        </div>
-
-    </section>
-
-
-    <div class="grade-cards">
-
-       
-        <section class="card-estatisticas">
-
-            <div class="cabecalho-card">
-                <h2>ESTATÍSTICAS</h2>
-            </div>
-
-            <div class="conteudo-estatisticas">
-
-                <div class="informacao-estatistica">
-                    <span>Treinos Concluídos</span>
-                    <strong>00 Total</strong>
-                </div>
-
-                <div class="informacao-estatistica">
-                    <span>Frequência</span>
-                    <strong>00%</strong>
-                </div>
-
-                <div class="informacao-estatistica">
-                    <span>Tempo</span>
-                    <strong>0:00h</strong>
-                </div>
-
-                <div class="informacao-estatistica">
-                    <span>Peso</span>
-                    <strong>0Kg</strong>
-                </div>
-
-            </div>
-
-        </section>
-
-
-       
-        <section class="card-conquistas">
-
-            <div class="cabecalho-card">
-                <h2>CONQUISTAS</h2>
-            </div>
-
-            <div class="conteudo-conquistas">
-
-                <span class="conquista"></span>
-                <span class="conquista"></span>
-                <span class="conquista"></span>
-                <span class="conquista"></span>
-                <span class="conquista"></span>
-                <span class="conquista"></span>
-
-            </div>
-
-        </section>
-
-
+    
+    <main class="dashboard-content">
+      
+      <section class="top-grid">
         
-        <section class="card-treino">
+        <article class="card card-green">
+          <p class="card-subtitle">Seu progresso semanal</p>
+          <h2 class="big-stat">72%</h2>
+          <div class="progress-bar-bg light">
+            <div class="progress-bar-fill white" style="width: 72%;"></div>
+          </div>
+          <p class="card-footer-text">+50 pontos esta semana!</p>
+        </article>
 
-            <div class="cabecalho-card">
-                <h2>TREINO DE HOJE</h2>
-                <span class="etiqueta-recente">RECENTE</span>
+        <article class="card card-white">
+          <div class="card-header">
+            <h3>Estatísticas</h3>
+            <a href="#" class="link-green">Ver detalhes &rarr;</a>
+          </div>
+          <div class="stats-grid">
+            <div class="stat-box">
+              <span class="stat-label">Treinos Concluídos</span>
+              <div class="stat-value-row">
+                <strong>24</strong>
+                <small>Total</small>
+              </div>
             </div>
-
-            <div class="conteudo-treino">
-
-                <span class="icone-treino"></span>
-
-                <h3>TREINO DE INFERIORES</h3>
-
-                <p>TEMP: 45MIN / 6 Exercícios</p>
-
-                <button class="botao-treino">VER TREINO</button>
-
+            <div class="stat-box">
+              <span class="stat-label">Frequência</span>
+              <div class="stat-value-row">
+                <strong>70%</strong>
+                <small>Este mês</small>
+              </div>
             </div>
-
-        </section>
-
-
-        
-        <section class="card-objetivos">
-
-            <div class="cabecalho-card">
-                <h2>OBJETIVOS</h2>
+            <div class="stat-box">
+              <span class="stat-label">Tempo</span>
+              <div class="stat-value-row">
+                <strong>2:30h</strong>
+              </div>
             </div>
-
-            <div class="conteudo-objetivos">
-
+            <div class="stat-box">
+              <span class="stat-label">Peso perdido</span>
+              <div class="stat-value-row">
+                <strong>3kg</strong>
+              </div>
             </div>
+          </div>
+        </article>
 
-        </section>
+      
+        <article class="card card-white">
+          <div class="card-header">
+            <h3>Painel de conquistas</h3>
+            <a href="#" class="link-green">Ver todas &rarr;</a>
+          </div>
+          <div class="badges-grid">
+            <div class="badge-circle" title="Conquista 1"></div>
+            <div class="badge-circle" title="Conquista 2"></div>
+            <div class="badge-circle" title="Conquista 3"></div>
+            <div class="badge-circle" title="Conquista 4"></div>
+            <div class="badge-circle" title="Conquista 5"></div>
+            <div class="badge-circle" title="Conquista 6"></div>
+          </div>
+        </article>
+      </section>
 
-    </div>
+      
+      <section class="bottom-grid">
+       
+        <article class="card card-white objective-card">
+          <h3>Objetivo</h3>
+          <div class="objective-body">
+            <div class="objective-icon-box"></div>
+            <div class="objective-info">
+              <p>Treinar 5 dias seguidos</p>
+              <div class="objective-progress-row">
+                <div class="progress-bar-bg gray">
+                  <div class="progress-bar-fill green" style="width: 60%;"></div>
+                </div>
+                <span class="fraction">3/5</span>
+              </div>
+            </div>
+          </div>
+        </article>
 
-</main>
+     
+        <article class="card card-white today-workout-card">
+          <h3>Treino de hoje</h3>
+          <div class="workout-banner">
+            <div class="workout-details">
+              <h4>Treino de inferiores</h4>
+              <p>45 min &nbsp;|&nbsp; 4 exercícios</p>
+            </div>
+            <button class="btn-ver-mais">Ver mais</button>
+          </div>
+        </article>
+      </section>
+    </main>
+  </div>
 
-
-
-
-
-
-
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
