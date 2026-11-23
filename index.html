@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8" />
@@ -13,53 +13,47 @@
 </head>
 <body>
   <div class="container">
-    
-    <header class="navbar">
-      <a href="#" class="logo">Gym<span>Flow</span></a>
-            <nav class="nav-links" id="navLinks">
-
-                <a href="#" class="active">Início</a>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"
-                    href="#"
-                    id="navbarDropdownMenuLink"
-                    role="button"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                        Dashboard
-                    </a>
-
-                    <ul class="dropdown-menu list-unstyled" aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="#">Aluno</a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#">Personal</a>
-                        </li>
-                    </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                Gym<span>Flow</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Início</a>
                 </li>
+                 <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dashboard
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <li><a class="dropdown-item" href="#">Aluno</a></li>
+                    <li><a class="dropdown-item" href="#">Personal</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Progresso</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Contatos</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Sobre Nós</a>
+                </li>
+              </ul>
 
-                <a href="#">Progresso</a>
-                <a href="#">Contato</a>
-                <a href="#">Sobre Nós</a>
+              <div class="nav-buttons">
+                  <a href="login.html" class="btn btn-login">Login</a>
+                  <a href="cadastro.html" class="btn btn-signup">Cadastro</a>
+              </div>
 
-            </nav>
-      
-     
-
-      <div class="tabs">
-            <button type="button" class="tab-btn active" id="loginTab">
-                Login
-            </button>
-
-            <button type="button" class="tab-btn" id="cadastroTab">
-                Cadastro
-            </button>
-      </div>
-
-
+            </div>
+          </div>
+        </nav>
     </header>
 
     <section class="banner-section" aria-label="Destaques">
@@ -220,3 +214,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+    
